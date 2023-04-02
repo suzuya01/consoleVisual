@@ -1,0 +1,59 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <script src="https://cdn.tailwindcss.com"></script>
+    <link rel="stylesheet" href="//code.jquery.com/ui/1.13.2/themes/base/jquery-ui.css">
+    <script src="https://code.jquery.com/jquery-3.6.0.js"></script>
+    <script src="https://code.jquery.com/ui/1.13.2/jquery-ui.js"></script>
+    <link rel="stylesheet" href="./src/styles/style.css">
+    <title>console</title>
+</head>
+<body class="flex items-center justify-center h-screen bg-neutral-900 overflow-hidden">
+    <div id="draggable" class="Board w-[1100px] h-[700px] rounded-t-lg rounded-b-md">
+        <div id="header" class="w-[1100px] h-[100px] bg-zinc-600 flex items-center justify-center rounded-t-lg fixed z-10">
+            <span class="text-center">root@console ~/.bash</span>
+        </div>
+        <div class="w-[1100px] h-[600px] bg-zinc-900 p-3 rounded-b-md mt-[100px] overflow-y-auto overflow-x-hidden">
+            <div class="">
+                <span class="text-sm text-white">Подготовка к работе...</span><br>
+                <span class="text-sm text-green-500">00:00:05s шото тупит, но вроде бы всио!</span><br>
+                <span id="line" class="text-sm text-white">== == == == == == == == == == == == == == == == == ==</span></br>
+                <pre contenteditable="false" id="ConsoleTitle" class="text-white text-sm relative w-[600px] typed-text">
+   ____     U  ___ u   _   _       ____        U  ___ u    _      U _____ u 
+U /"___|     \/"_ \/  | \ |"|     / __"| u      \/"_ \/   |"|     \| ___"|/ 
+\| | u       | | | | <|  \| |>   <\___ \/       | | | | U | | u    |  _|"   
+ | |/__  .-,_| |_| | U| |\  |u    u___) |   .-,_| |_| |  \| |/__   | |___   
+  \____|  \_)-\___/   |_| \_|     |____/>>   \_)-\___/    |_____|  |_____|  
+  _// \\        \\     ||   \\,-.   )(  (__)       \\      //  \\   <<   >>  
+ (__)(__)      (__)    (_")  (_/   (__)           (__)    (_")("_) (__) (__)
+                </pre>
+                <br>
+                <span id="line" class="text-sm text-white">== == == == == == == == == == == == == == == == == ==</span></br>          
+                <span class="text-sm text-blue-500">Пиши ручками '<span class="text-white">help</span>' что бы увидеть список нереальных команд</span><br>   
+                
+                <!-- Сюда должен будет вставляться текст -->
+    
+                <!---------- Код для пин понга --------------->
+                <div class="w-[630px] h-[130px] mb-7">
+                    <span class="text-sm text-white"> Это реально <span class="text-green-500">Ping Pong</span> черт его подери ＼（〇_ｏ）／</span>
+                    <div class="w-[500px] h-[100px] relative">
+                        <div id="rocket1" class="bg-white w-[7px] h-[33px] absolute left-0"></div>
+                        <div id="ball" class="w-[10px] h-[10px] rounded-full bg-white left-1.5 top-0 absolute"></div>
+                        <div id="rocket2" class="bg-white w-[7px] h-[33px] absolute right-0 bottom-0"></div>
+                    </div>     
+                </div>                 
+            </div>  
+
+            <div class="flex items-center mt- gap-2">
+                <span class="text-sm text-green-500">root@console ~$</span>
+                <input type="text" name="" id="" class="bg-transparent outline-none text-white w-[830px]">
+            </div>
+
+        </div>
+    </div>
+    <script src="./src/scripts/script.js"></script>
+</body>
+</html>
